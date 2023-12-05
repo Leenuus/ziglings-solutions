@@ -40,8 +40,10 @@ pub fn main() void {
             9 => std.debug.print("I", .{}),
             10 => std.debug.print("J", .{}),
             // ... we don't need everything in between ...
+            11...24 => {},
             25 => std.debug.print("Y", .{}),
             26 => std.debug.print("Z", .{}),
+            else => std.debug.print("?", .{}),
             // Switch statements must be "exhaustive" (there must be a
             // match for every possible value).  Please add an "else"
             // to this switch to print a question mark "?" when c is
