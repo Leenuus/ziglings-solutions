@@ -60,7 +60,7 @@ struct Grape;
 
 ```
 
-I mean, union is a way to save memory in machine level, but __in a programmer perspctive__, it gives a way to express these things are things in the same group. And what about enum? It is a way to express that there are A, B, C, D, total 4 options in this circumstances. So when you combine two concepts, you get a way to indicate a group, also a way to specify the certain thing belonged to this group. To be short, __union creates a namespace holding the options, and enum indicates one option in this namespace__
+I mean, union is a way to save memory in machine level, but __in a programmer perspctive__, it gives a way to express these things are things in the same group. And what about enum? It is a way to express that there are A, B, C, D, total 4 options in this circumstances. So when you combine two concepts, you get a way to indicate a group, also a way to specify the certain thing belonged to this group. To be short, __union creates a namespace holding the options, and enum indicates one option, a fancy name, variant, in this namespace.__
 
 So in Zig, there is something like
 
